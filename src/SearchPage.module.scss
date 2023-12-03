@@ -1,0 +1,38 @@
+.container {
+  margin-top: 80px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  transition-duration: 500ms;
+  padding-top: 20px;
+}
+
+.quote {
+  width: 70vw;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 70vw;
+  gap: 3vw;
+}
+
+.container2 {
+  margin-top: 80px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #11264f;
+  transition-duration: 500ms;
+  color: white;
+  padding-top: 20px;
+}

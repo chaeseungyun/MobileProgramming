@@ -1,0 +1,35 @@
+.container {
+  position: fixed;
+  top: 0px;
+  height: 80px;
+  background-color: #1e1e1e;
+  width: 100%;
+  z-index: 10;
+  color: red;
+  font-weight: 10000;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.input {
+  border: none;
+  color: white;
+  background-color: #1e1e1e;
+  border-bottom: 1px solid white;
+
+  &::placeholder {
+    color: white;
+  }
+}
+
+.button {
+  border: 1px solid white;
+  border-radius: 1em;
+  background-color: #1e1e1e;
+  color: white;
+  width: 50px;
+  height: 25px;
+  cursor: pointer;
+}
