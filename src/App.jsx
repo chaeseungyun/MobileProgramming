@@ -1,4 +1,3 @@
-import "./App.css";
 import Headers from "./Headers";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Recommend from "./Recommend";

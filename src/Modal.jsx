@@ -1,10 +1,7 @@
 import { createPortal } from "react-dom";
-import { IMG_URL } from "./MovieSet";
 import styles from "./Modal.module.scss";
 import axios from "axios";
 import { useEffect, useState } from "react";
-
-const VIDEO_URL = "https://www.youtube.com/watch?v=";
 
 const getVideo = (id) => {
   const result = axios.get(
@@ -20,7 +17,6 @@ function Modal({ overview, modalpath, setIsClicked, id }) {
   const [state, setState] = useState();
   const setVideo = async () => {
     const result = await getVideo(id);
-    console.log(result);
     setState(result.data.results[0].key);
   };
   useEffect(() => {
