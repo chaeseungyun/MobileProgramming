@@ -2,3 +2,9 @@
   padding: 0px;
   margin: 0px;
 }
+
+body {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}

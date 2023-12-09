@@ -24,6 +24,13 @@
   }
 }
 
+.toolSet {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
 .button {
   border: 1px solid white;
   border-radius: 1em;
@@ -32,4 +39,36 @@
   width: 50px;
   height: 25px;
   cursor: pointer;
+}
+
+.star {
+  position: absolute;
+  right: 0px;
+  opacity: 0;
+
+  &:hover {
+    opacity: 1;
+    transition: opacity 500ms;
+    cursor: pointer;
+  }
+
+  &:hover + .tooltip {
+    transition: display 500ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.tooltip {
+  position: absolute;
+  right: 35px;
+  bottom: 22px;
+  color: white;
+  background-color: #11264f;
+  width: 100px;
+  height: 40px;
+  font-style: normal;
+  display: none;
+  border-radius: 1em;
 }

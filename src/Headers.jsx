@@ -1,6 +1,8 @@
 import styles from "./Headers.module.scss";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Star from "./assets/star.svg?react";
+import EmptyStar from "./assets/emptyStar.svg?react";
 
 function Headers() {
   const [input, setInput] = useState("");
@@ -19,7 +21,7 @@ function Headers() {
       >
         CHAEFLIX
       </div>
-      <div>
+      <div className={styles.toolSet}>
         <input
           type="text"
           placeholder="제목을 입력하세요"
@@ -41,6 +43,13 @@ function Headers() {
         >
           검색
         </button>
+        <div className={styles.emptyStar}>
+          <EmptyStar />
+        </div>
+        <div className={styles.star} onClick={() => navigate("/favorite")}>
+          <Star />
+        </div>
+        <div className={styles.tooltip}>좋아요</div>
       </div>
     </div>
   );

@@ -17,4 +17,17 @@
   transition-duration: 500ms;
   color: white;
   width: 100%;
+  position: relative;
+}
+
+.arrow {
+  position: fixed;
+  right: 40px;
+  bottom: 50px;
+  cursor: pointer;
+
+  @media screen and (max-width: 560px) {
+    bottom: 30px;
+    right: calc(50% - 27.5px);
+  }
 }

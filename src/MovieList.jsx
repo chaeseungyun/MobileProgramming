@@ -15,9 +15,8 @@ function MovieList() {
   const [count, setCount] = useState(1);
   const [state, setState] = useState([]);
   const getMovie = async () => {
-    console.log("호출됨");
     const result = await getMovieList(count);
-    console.log(result.data.results);
+    console.log(result.data);
     setState((prev) => [...prev, ...result.data.results]);
     setCount((prev) => prev + 1);
   };
@@ -59,6 +58,7 @@ function MovieList() {
             key={item.id}
             vote={item.vote_average}
             date={item.release_date}
+            genre={item.genre_ids}
           />
         ))}
       </div>
