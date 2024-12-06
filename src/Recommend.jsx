@@ -20,9 +20,12 @@ function Recommend() {
       () => {
         setHeight(window.scrollY);
       },
-      [heigth]
     );
-  });
+
+    return window.removeEventListener("scroll", () => {
+      setHeight(window.scrollY);
+    });
+  }, [heigth]);
   return (
     <div className={heigth > 10 ? styles.container2 : styles.container}>
       <MovieList />
