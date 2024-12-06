@@ -65,6 +65,7 @@ function SearchPage() {
                 key={item.id}
                 vote={item.vote_average}
                 date={item.release_date}
+                genre={item.genre_ids}
               />
             ))}
           </div>
